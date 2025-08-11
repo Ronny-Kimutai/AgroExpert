@@ -41,7 +41,7 @@ Frames = [
         "Priority": 70
     },
     {
-        "Name": "Capsicum",
+        "Name": "Chillies",
         "pHRange": (6.0, 6.5),
         "RainfallRange": (600, 1200),
         "PlantingMonths": ["Year-round with irrigation", "March", "April", "September", "October"],
