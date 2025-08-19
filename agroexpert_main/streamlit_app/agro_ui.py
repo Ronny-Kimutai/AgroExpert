@@ -1,13 +1,20 @@
 import os
+import sys
 import django
 import streamlit as st
+
+# Add the project root (where manage.py lives) to sys.path
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
 
 # Setup Django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "agroexpert_main.settings")
 django.setup()
 
-from .reasoning import forward_chaining_db, can_plant_db
+# Import reasoning from the same folder
+from reasoning import forward_chaining_db, can_plant_db
 
+# Streamlit UI
 st.title("🌱 AgroExpert - Crop Recommendation System")
 
 pH = st.number_input("Enter soil pH:", min_value=0.0, max_value=14.0, step=0.1)
