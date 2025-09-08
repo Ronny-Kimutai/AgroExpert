@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 # Setup Django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "agroexpert_main.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "C:/Users/lenovo/Desktop/Expert Systems and Applied AI/LAB Work + Discussions/AgroExpert/agroexpert_main/agroexpert_main/settings.py")
 django.setup()
 
 # Import reasoning from the same folder
