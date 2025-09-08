@@ -3,7 +3,7 @@ import django
 import streamlit as st
 
 # Setup Django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "agroexpert_main.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "C:/Users/lenovo/Desktop/Expert Systems and Applied AI/LAB Work + Discussions/AgroExpert/agroexpert_main/agroexpert_main/settings.py")
 django.setup()
 
 from .reasoning import forward_chaining_db, can_plant_db
